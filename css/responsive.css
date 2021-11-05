@@ -142,4 +142,10 @@
   .home-hero .big-tagline p {
     font-size: 1rem;
   }
+  .logo-img {
+    width: 40%;
+  }
+  .certificates img {
+    max-width: 30%;
+  }
 }
