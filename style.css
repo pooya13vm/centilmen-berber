@@ -476,8 +476,8 @@ a img.aligncenter {
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 1.2rem;
+    
 }
-
 
 .overlay{
 	position: relative;
@@ -2668,7 +2668,7 @@ iframe{
     color:#ed2d46 ;
 }
 .contact-text p {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 .farshad{
     max-width: 30%;
