@@ -91,7 +91,7 @@ h6 {
 }
 
 h1 {
-    font-size: 24px
+    font-size: 1.5rem
 }
 
 h2 {
@@ -299,10 +299,6 @@ a img.aligncenter {
     /* Above WP toolbar. */
 }
 
-.mus{
-	
-}
-
 /*------------------------------------------------------------------
     HEADER
 -------------------------------------------------------------------*/
@@ -439,7 +435,7 @@ a img.aligncenter {
 
 .display-table-cell {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align:-webkit-baseline-middle;
 }
 
 .slider-01{
@@ -458,18 +454,27 @@ a img.aligncenter {
 	height: 100vh;
 }
 
-.item.slider-01{
-	
-}
 .home-hero .big-tagline h2{
-	font-size: 48px;
+	font-size: 2.2rem;
 	color: #ffffff;
-	padding: 20px 0px;
+	padding: 2rem 0px;
+    /* top:50px */
+}
+.home-hero .big-tagline h1{
+    font-size: 48px;
+	color: #ffffff;
+	padding: 2rem 0px; 
+}
+.home-hero .big-tagline h3{
+    font-size: 1.5rem;
+	color: #ffffff;
+	padding: 2rem 0px; 
 }
 
 .home-hero .big-tagline p{
 	color: #ffffff;
-	padding: 0px 0px 30px 0px;
+	padding: 1rem 0px 30px 0px;
+    font-size: 1.2rem;
 }
 
 
