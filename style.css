@@ -374,7 +374,6 @@ a img.aligncenter {
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item{	
-	/* background: #010101; */
 	position: relative;
 	z-index: 0;
 }
@@ -435,7 +434,7 @@ a img.aligncenter {
 
 .display-table-cell {
     display: table-cell;
-    vertical-align:-webkit-baseline-middle;
+    vertical-align:sub;
 }
 
 .slider-01{
