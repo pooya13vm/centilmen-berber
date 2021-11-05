@@ -2648,9 +2648,11 @@ body.barber_version .dev-list .widget:hover .hover-br .social-up-hover .footer-s
     height: 600px;
 }
 iframe{
-    padding: 5px;
+    padding: 15px;
     width:100%;
      height:600px;
+     border: 3px dashed #000;
+     margin-top: 5px;
 }
 .contact-title{
     margin-top: 10%;
@@ -2660,7 +2662,7 @@ iframe{
 
 .contact-text{
     font-size: 1.2rem;
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 
 .contact-text p i {
@@ -2668,7 +2670,7 @@ iframe{
     color:#ed2d46 ;
 }
 .contact-text p {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .farshad{
     max-width: 30%;
@@ -2676,3 +2678,53 @@ iframe{
 .contact-section{
     display: flex;
 }
+.certificates{
+    display: flex;
+    justify-content: space-evenly;
+}
+.certificates img {
+    max-width: 20%;
+}
+.slider {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .swiper-container {
+    padding-bottom: 20px;
+  }
+  
+  .swiper-scrollbar {
+    background: #d6d6d6;
+  }
+  
+  .swiper-container-horizontal > .swiper-scrollbar {
+    height: 5px;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  
+  .swiper-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide img{
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+  }
+  .slider-container{
+      height: 50%;
+  }
+  .swiper-button-next{
+      margin-top: 0 !important;
+      color: #000 !important;
+  }
+  .swiper-button-prev{
+    margin-top: 0 !important;
+    color: #000 !important;
+  }

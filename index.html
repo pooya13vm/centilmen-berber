@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
 
 </head>
@@ -179,6 +179,59 @@
 				
 			</div>
 		</div>
+
+		<div id="barbers" class="section lb">
+			<div class="container">
+				<div class="section-title row text-center">
+					<h3>GALERİ</h3>
+				</div><!-- end title -->
+
+
+
+				<div class="slider-container">
+					<div class="slider">
+						<div class="swiper-container">
+						  <div class="swiper-wrapper">
+							<div class="swiper-slide">
+							  <img src="./uploads/1.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+							  <img src="./uploads/2.jpg" alt="">
+							</div>
+							<!-- <div class="swiper-slide">
+							  <img src="./uploads/3.jpg" alt="">
+							</div> -->
+							<div class="swiper-slide">
+							  <img src="./uploads/4.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+							  <img src="./uploads/5.jpg" alt="">
+							</div>
+							<div class="swiper-slide">
+							  <img src="./uploads/6.jpeg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="./uploads/7.jpeg" alt="">
+							  </div>
+						  </div>
+					  
+						  <!-- pagination -->
+						  <div class="swiper-pagination"></div>
+					  
+						  <!-- scrollbar -->
+						  <div class="swiper-scrollbar"></div>
+					  
+						  <!-- buttons -->
+						  <div class="swiper-button-prev"></div>
+						  <div class="swiper-button-next"></div>
+						</div> 
+					  </div>
+				</div> <!-- end of slider-container -->
+
+			    </div>
+			</div><!-- end container -->
+		</div><!-- end section -->
+
 		<div id="pricing" class="section lb">
 				<div class="container">
 					<div class="section-title row text-center">
@@ -271,51 +324,19 @@
 		</div>
 		
 		
-		<div id="barbers" class="section lb">
-			<div class="container">
-				<div class="section-title row text-center">
-					<div class="col-md-8 offset-md-2">
-					<h3>BERBERİMİZ</h3>
-					</div>
-				</div><!-- end title -->
-
-				<div class="row dev-list text-center">
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-						<div class="widget our-inner-taem clearfix">
-							<div class="t-top"></div>
-							<div class="hover-br">
-								<img src="./uploads/berber.jpg" alt="" class="img-responsive">
-								<div class="social-up-hover">
-									<div class="footer-social">
-										<a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-										<a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="team-box">
-								<div class="widget-title">
-									<h3>Soren Bo Bostian</h3>
-									<small>The Founder</small>
-								</div>
-								<!-- end title -->
-								<p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of The Barber Shop Company.</p>
-							</div>
-							<div class="t-bottom"></div>
-						</div><!--widget -->
-					</div><!-- end col -->
-					
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div><!-- end section -->
+	
 		<div class="map-box">
 			<div class="contact-section">
 				<div class=" col-12 col-lg-6 ">
 					<h4 class="text-center contact-title">Iletişim</h4>
 					<div class="m-5 contact-text">
 						<p class="ml-3"><i class="fa fa-map-marker mr-3"></i>Cumhuriyet, Mehmet Arpacıoğlu Cd. No 4/1A, 03200 Afyonkarahisar Merkez/Afyonkarahisar</p>
-						<p class="ml-3"><i class="fa fa-mobile-phone mr-3"></i>0536 673 4077</p>
+						<p class="ml-3"><i class="fa fa-mobile-phone mr-3"></i><a href="#">0536 673 4077</a></p>
+						<div class="certificates">
+							<img src="./uploads/certificate1.jpg" alt="certificate-1">
+							<img src="./uploads/certificate3.jpg" alt="certificate-3">
+							<img src="./uploads/certificate2.jpg" alt="certificate-2">
+						</div>
 					</div>
 					
 				</div>
@@ -344,5 +365,47 @@
 	<script src="js/responsive-tabs.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script>
+		var $swiperSelector = $('.swiper-container');
+
+$swiperSelector.each(function(index) {
+    var $this = $(this);
+    $this.addClass("swiper-slider-" + index);
+    
+    var loop = $this.data('loop') !== undefined ? $this.data('loop') : false;
+    var freeMode = $this.data('free-mode') !== undefined ? $this.data('free-mode') : false;
+    var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 50;
+  
+    var swiper = new Swiper(".swiper-slider-" + index, {
+      direction: "horizontal",
+      loop: true,
+      freeMode: freeMode,
+      breakpoints: {
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        480: {
+           slidesPerView: 3,
+		       spaceBetween: 20
+        }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        dragSize: dragSize
+     }
+  });
+});
+	</script>
 </body>
 </html>
