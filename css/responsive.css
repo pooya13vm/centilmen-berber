@@ -136,4 +136,10 @@
     /* display: flex; */
     flex-direction: column;
   }
+  .home-hero .big-tagline h1 {
+    font-size: 2rem;
+  }
+  .home-hero .big-tagline p {
+    font-size: 1rem;
+  }
 }
