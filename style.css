@@ -331,6 +331,7 @@ a img.aligncenter {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 100;
+    font-size: 1.2rem !important;
 }
 
 .top-navbar.fixed-menu{
@@ -384,11 +385,13 @@ a img.aligncenter {
 .top-navbar .navbar-light .navbar-nav .nav-item{	
 	position: relative;
 	z-index: 0;
+    font-size: 1.2rem;
 }
 .top-navbar .navbar-light .navbar-nav .nav-link:hover::after {
     width: 100%;
     height: 100%;
     border-radius: 0px 15px 0px 0px;
+    font-size: 1.3rem;
 }
 .top-navbar .navbar-nav{	
 	position: relative;
@@ -570,8 +573,8 @@ a img.aligncenter {
     display: block;
     position: relative;
     overflow: hidden;
-    padding-top: 9%;
-    padding-bottom: 5%;
+    padding-top: 8%;
+    padding-bottom: 4%;
 }
 
 .noover {
@@ -641,6 +644,7 @@ a img.aligncenter {
 	padding: 10px 0px;
 	position: relative;
 	z-index: 2;
+    margin-top: 10%;
 }
 
 .first-section .lead {
@@ -1022,7 +1026,9 @@ a img.aligncenter {
 /*------------------------------------------------------------------
     PRICING TABLES
 -------------------------------------------------------------------*/
-
+#pricing{
+    padding-bottom: 9% !important;
+}
 .pricing-table {
     margin: 50px 0 0 0;
     background: #fff;
@@ -1106,7 +1112,24 @@ a img.aligncenter {
     margin-top: 25px;
     padding-bottom: 30px;
 }
-
+.price-item{
+    width: 70%;
+    margin: 5%  auto;
+}
+.price-item:not(:last-child){
+    border-bottom: 2px dotted #000 ;
+    padding-bottom: 5%;
+}
+.price-item p{
+    background-color:#ed2d46 ;
+    max-width: max-content;
+    color: #f0f0f0;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 0  auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /* Highlighted table */
 
@@ -1349,6 +1372,7 @@ body.barber_version .about-tab .nav-pills > li a:hover{
     text-align: center;
     margin: -20px auto;
 }
+
 
 .service-widget:hover .hoverbutton {
     opacity: 1;
@@ -2652,13 +2676,13 @@ body.barber_version .dev-list .widget:hover .hover-br .social-up-hover .footer-s
 .line-pricing a:hover{
 	color: #010101 !important;
 }
-.map-box{
+/* .footer{
     height: 600px;
-}
+} */
 iframe{
     padding: 15px;
     width:100%;
-     height:600px;
+     height:500px;
      border: 3px dashed #000;
      margin-top: 5px;
 }
@@ -2682,16 +2706,28 @@ iframe{
 .farshad{
     max-width: 30%;
 }
-.contact-section{
+.footer-section{
     display: flex;
+}
+.footer-left{
+    display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .certificates{
     display: flex;
     justify-content: space-evenly;
     margin-top: 5%;
+    position: relative;
+}
+.cert-item{
+    text-align: center;
+    width: 33%;
+    /* height: 100%;  */
 }
 .certificates img {
-    max-width: 20%;
+    max-width: 65%;
+    height: 100%;
 }
 .slider {
     max-width: 1200px;
@@ -2735,4 +2771,7 @@ iframe{
   .swiper-button-prev{
     margin-top: 0 !important;
     color: #000 !important;
+  }
+  .map-section{
+      padding: 5%;
   }
