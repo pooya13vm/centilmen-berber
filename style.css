@@ -311,9 +311,12 @@ a img.aligncenter {
 	margin: 0px;
 }
 .logo-img{
-    width: 35%;
+    width: 21%;
+    margin-left: 5%;
 }
-
+#navbars-rs-food{
+    margin-right: 5%;
+}
 .top-navbar {
     position: relative;
     z-index: 10;
@@ -370,9 +373,14 @@ a img.aligncenter {
 }
 .tab-section{
     font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+#tab_a p {
     font-weight: bold;
 }
-
+#myTab li{
+    font-weight: bold;
+}
 .top-navbar .navbar-light .navbar-nav .nav-item{	
 	position: relative;
 	z-index: 0;
@@ -2669,7 +2677,7 @@ iframe{
     color:#ed2d46 ;
 }
 .contact-text p {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 .farshad{
     max-width: 30%;
@@ -2680,6 +2688,7 @@ iframe{
 .certificates{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 5%;
 }
 .certificates img {
     max-width: 20%;

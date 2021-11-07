@@ -53,7 +53,6 @@
 	<!-- Start header -->
 	<header class="top-navbar">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
 					<img src="images/logo.png" alt="logo" class="logo-img" />
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar top-bar"></span>
@@ -68,7 +67,6 @@
 						<li class="nav-item"><a class="nav-link" href="contact.html">İLETİŞİM</a></li>
 					</ul>
 				</div>
-			</div>
 		</nav>
 	</header>
 	<!-- End header -->
@@ -144,21 +142,11 @@
 					<div class="col-md-12">
 						<div class="about-tab tab-section">
 							<ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
-								<li class="nav-item"><a class="nav-link active" href="#tab_a" data-toggle="tab">Çalışma Saatleri</a></li>
-								<li class="nav-item"><a class="nav-link" href="#tab_b" data-toggle="tab">Neden biz?</a></li>
-								<!-- <li class="nav-item"><a class="nav-link" href="#tab_c" data-toggle="tab">About Us</a></li>								 -->
+								<li class="nav-item"><a class="nav-link active" href="#tab_a" data-toggle="tab">Neden biz?</a></li>
+								<li class="nav-item"><a class="nav-link" href="#tab_b" data-toggle="tab">Çalışma Saatleri</a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade show active" id="tab_a">
-									<p>Pzt:	12:00 – 21:00</p>
-									<p>Sal:	12:00 – 21:00</p>
-									<p>Çar:	12:00 – 21:00</p>
-									<p>Per:	12:00 – 21:00</p>
-									<p>Cum:	12:00 – 21:00</p>
-									<p>Cmt:	12:00 – 21:00</p>
-									<p>Paz:	Kapalı</p>
-								</div>
-								<div class="tab-pane fade" id="tab_b">
 									<p>Neden bizi seçmelisiniz?</p>
 									<ul>
 									<li>• Her zaman sıcak bir ortam</li>
@@ -168,15 +156,20 @@
 									<li>• Tüm yüzeyler ve aletler kullanımdan önce ve sonra temizlenir, dezenfekte edilir.</li>
 									</ul>
 								</div>
-								<div class="tab-pane fade" id="tab_c">
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+								<div class="tab-pane fade  " id="tab_b">
+									<p>Pzt:	12:00 – 21:00</p>
+									<p>Sal:	12:00 – 21:00</p>
+									<p>Çar:	12:00 – 21:00</p>
+									<p>Per:	12:00 – 21:00</p>
+									<p>Cum:	12:00 – 21:00</p>
+									<p>Cmt:	12:00 – 21:00</p>
+									<p>Paz:	Kapalı</p>
 								</div>
+							
 							</div><!-- tab content -->
 						</div>
 					</div><!-- end col -->
 				</div><!-- end row -->
-				
-				
 			</div>
 		</div>
 
@@ -198,9 +191,6 @@
 							<div class="swiper-slide">
 							  <img src="./uploads/2.jpg" alt="">
 							</div>
-							<!-- <div class="swiper-slide">
-							  <img src="./uploads/3.jpg" alt="">
-							</div> -->
 							<div class="swiper-slide">
 							  <img src="./uploads/4.jpg" alt="">
 							</div>
@@ -328,15 +318,16 @@
 		<div class="map-box">
 			<div class="contact-section">
 				<div class=" col-12 col-lg-6 ">
+					<div class="certificates">
+						<img src="./uploads/certificate1.jpg" alt="certificate-1">
+						<img src="./uploads/certificate3.jpg" alt="certificate-3">
+						<img src="./uploads/certificate2.jpg" alt="certificate-2">
+					</div>
 					<h4 class="text-center contact-title">Iletişim</h4>
-					<div class="m-5 contact-text">
+					<div class="mx-5 my-4 contact-text">
 						<p class="ml-3"><i class="fa fa-map-marker mr-3"></i>Cumhuriyet, Mehmet Arpacıoğlu Cd. No 4/1A, 03200 Afyonkarahisar Merkez/Afyonkarahisar</p>
 						<p class="ml-3"><i class="fa fa-mobile-phone mr-3"></i><a href="#">0536 673 4077</a></p>
-						<div class="certificates">
-							<img src="./uploads/certificate1.jpg" alt="certificate-1">
-							<img src="./uploads/certificate3.jpg" alt="certificate-3">
-							<img src="./uploads/certificate2.jpg" alt="certificate-2">
-						</div>
+						
 					</div>
 					
 				</div>
@@ -364,46 +355,6 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-	<script>
-		var $swiperSelector = $('.swiper-container');
-
-$swiperSelector.each(function(index) {
-    var $this = $(this);
-    $this.addClass("swiper-slider-" + index);
-    
-    var loop = $this.data('loop') !== undefined ? $this.data('loop') : false;
-    var freeMode = $this.data('free-mode') !== undefined ? $this.data('free-mode') : false;
-    var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 50;
-  
-    var swiper = new Swiper(".swiper-slider-" + index, {
-      direction: "horizontal",
-      loop: true,
-      freeMode: freeMode,
-      breakpoints: {
-        1920: {
-          slidesPerView: 4,
-          spaceBetween: 20
-        },
-        992: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-        480: {
-           slidesPerView: 3,
-		       spaceBetween: 20
-        }
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true,
-        dragSize: dragSize
-     }
-  });
-});
-	</script>
+	<script src="./js/slider.js"></script>
 </body>
 </html>
