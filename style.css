@@ -444,7 +444,7 @@ a img.aligncenter {
   /* top:50px */
 }
 .home-hero .big-tagline h1 {
-  font-size: 48px;
+  font-size: 2.5rem;
   color: #ffffff;
   padding: 2rem 0px;
 }
@@ -655,6 +655,10 @@ a img.aligncenter {
   margin: 0 0 25px;
   padding: 0;
   text-transform: none;
+}
+.section-title h2 {
+  font-size: 34px;
+  font-weight: bold;
 }
 
 .section.colorsection p,
@@ -1089,7 +1093,7 @@ a img.aligncenter {
 .price-item p {
   background-color: #ed2d46;
   max-width: max-content;
-  color: #f0f0f0;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 3px;
   margin: 0 auto;
@@ -1270,7 +1274,7 @@ body.barber_version .about-tab .nav-pills > li a:hover {
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 1.5rem;
-  color: #999;
+  color: rgb(20, 20, 20);
   margin: 15% auto;
 }
 
@@ -1291,10 +1295,11 @@ body.barber_version .about-tab .nav-pills > li a:hover {
 
 .message-box .lead {
   padding-top: 10px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-style: normal;
   color: #ed2d46;
   padding-bottom: 0;
+  font-weight: bold;
 }
 
 .right-box {
