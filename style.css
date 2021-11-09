@@ -2669,11 +2669,21 @@ iframe {
 .contact-text p a i {
   font-size: 2.4rem;
   padding: 8px;
+  transition: 0.5s;
 }
-.contact-text p a i:hover {
+.contact-text .fa-instagram:hover {
+  background-color: #f9f9f9;
+  color: #a3238e;
+  border-radius: 30px;
+}
+.contact-text .fa-facebook:hover {
   background-color: #f9f9f9;
   color: #1877f2;
-
+  border-radius: 30px;
+}
+.contact-text .fa-whatsapp:hover {
+  background-color: #f9f9f9;
+  color: #4aae20;
   border-radius: 30px;
 }
 .farshad {
