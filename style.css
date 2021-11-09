@@ -2650,7 +2650,7 @@ iframe {
   margin-top: 5px;
 }
 .contact-title {
-  margin-top: 10%;
+  margin-top: 7%;
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -2665,6 +2665,16 @@ iframe {
 }
 .contact-text p {
   margin-bottom: 3%;
+}
+.contact-text p a i {
+  font-size: 2.4rem;
+  padding: 8px;
+}
+.contact-text p a i:hover {
+  background-color: #f9f9f9;
+  color: #1877f2;
+
+  border-radius: 30px;
 }
 .farshad {
   max-width: 30%;
