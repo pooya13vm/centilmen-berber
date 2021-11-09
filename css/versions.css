@@ -238,6 +238,12 @@ body.barber_version .sidebar-nav li a:focus {
   text-decoration: none;
 }
 
+body.barber_version .section-title h2 {
+  font-size: 34px;
+  /* padding: 10px 0 0; */
+  font-weight: bold;
+  line-height: 1 !important;
+}
 body.barber_version .section-title h3 {
   font-size: 34px;
   /* padding: 10px 0 0; */
@@ -273,7 +279,7 @@ body.barber_version .service-wrap {
   transition: all 1s ease-in-out;
 }
 
-body.barber_version .service-wrap h4 {
+body.barber_version .service-wrap h3 {
   font-weight: bold;
   text-transform: capitalize;
   font-size: 20px;
